@@ -1,0 +1,174 @@
+header{
+    padding: 30px 20px 0 0;
+    background-color:#3C3A3D ;
+    display: flex;
+    justify-content: space-between;
+    color: #FFFFFF;
+}
+
+header img {
+    height: 130px;
+}
+
+header select {
+    background-color: #BCB8B1;
+    padding: 3px 30px;
+    border-radius: 5px;
+}
+
+header ul {
+    padding: 0;
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    height: min-content;
+}
+
+
+header a {
+    text-decoration: none;
+    color: inherit;
+    padding: 0 10px;
+    border-right: solid 1px white;
+}
+
+header li:nth-last-of-type(2) a {
+    border-right: none;
+}
+
+/* Beneficios*/
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding: 30px 30px;
+}
+#titulo-beneficio {
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+}
+
+#titulo-beneficio div {
+    width: 90%;
+    border-top: #3C3A3D 3px solid;
+}
+
+#titulo-beneficio h1 {
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+section ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+section li {
+    font-size: 30px;
+    color: #000000;
+    font-weight: 700;
+}
+
+/*Prmiações*/
+#secao-premiacao {
+    background-color: #3C3A3D;
+    padding: 40px 20px 90px 20px;
+    color: #FFFFFF;
+}
+
+#titulo-premiacao {
+    width: max-content;
+    border-bottom: #FFFFFF 3px solid;
+}
+
+#secao-premiacao {
+    color: #FFFFFF;
+    font-size: 25px;
+}
+
+#secao-premiacao ul {
+    margin: 60px 0 ;
+}
+
+#secao-premiacao li {
+    padding: 10px 0;
+}
+
+#secao-premiacao h2 {
+    padding: 0 30px;
+}
+
+#container-image-premiacao {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    gap: 20px; /* Espaçamento entre as imagens */
+    flex-wrap: wrap; /* Permite quebrar para outra linha em telas menores */
+}
+
+#container-image-premiacao img {
+    max-width: 100%; /* Garante que as imagens não fiquem maiores que o container */
+    height: 150px; /* Mantém a proporção da imagem */
+    flex: 1 1 calc(33.333% - 20px); /* Ajusta a largura com espaçamento */
+    min-width: 250px; /* Define um tamanho mínimo */
+}
+
+
+@media (max-width: 1011px) {
+    header img {
+        height: 80px;
+    }
+    header{
+        font-size: 14px;
+    }
+
+    header select {
+        padding: 3px 10px;
+    }
+  }
+
+  @media (max-width: 617px) {
+    header img {
+        height: 40px;
+        display: none;
+    }
+    header{
+        font-size: 8px;
+        padding: 30px 0px 30px 0;
+        align-items: center;
+        justify-content: center;
+    }
+    header select {
+        font-size: 8px;
+        padding: 5px 0;
+    }
+    header a {
+        padding: 0 3px;
+    }
+
+    #titulo-beneficio h1 {
+        font-size: 20px;
+        margin: 10px 0;
+    }
+
+    section li {
+        font-size: 20px;
+    }
+
+    #secao-premiacao {
+        color: #FFFFFF;
+        font-size: 16px;
+    }
+
+    #titulo-premiacao {
+        font-size: 10px;
+
+    }
+    
+  } 
